@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    height: 75vh;
+    background: rgb(78, 100, 109);
+}
+
+.score{
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
