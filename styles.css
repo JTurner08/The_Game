@@ -1,3 +1,13 @@
+.intro{
+    background-color: rgb(150, 57, 153);
+}
+
+img {
+    height: 50px;
+    width: 75px;
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +16,7 @@
 
 section {
     height: 75vh;
-    background: rgb(78, 100, 109);
+    background: rosybrown
 }
 
 .score{
@@ -15,3 +25,4 @@ section {
     justify-content: space-around;
     align-items: center;
 }
+
