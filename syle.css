@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    height: 75vh;
+    background: rgb(144, 161, 168);
+}
+
+.score{
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.score h2 
