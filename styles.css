@@ -1,13 +1,38 @@
 .intro{
     font-size: 30px;
-    background-color: rgb(150, 57, 153);
+    background-color: rgba(26, 23, 199, 0.774);
+    display: flex;
+    align-items:center;
+    justify-content: center;
 }
+
+.intro button{
+    width: 100px;
+    height: 50px;
+    font-size:18px;
+    background-color:rgb(33, 190, 41);
+    color: white;
+}
+
+.match {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*choose option, will have to change */
+.winner{
+    text-align: center;
+    font-size: 50px;
+}
+
+
 
 img {
     height: 80px;
     width: 75px;
 }
-
 
 *{
     margin: 0;
@@ -16,14 +41,22 @@ img {
 }
 
 section {
-    height: 75vh;
-    background: rosybrown
+    height: 100vh;
 }
 
-.score{
-    height: 20vh;
-    display: flex;
-    justify-content: space-around;
+.score {
     align-items: center;
+    display: flex;
+    height: 25vh;
+    justify-content: space-around;
+    
 }
 
+.score h2{
+    font-size: 50px;
+}
+/*digits for scorboard */
+.score p{
+    text-align: center;
+    font-size: 40px;
+}
