@@ -32,8 +32,7 @@ let win = (userChoice, computerChoice) => {
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
     result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} beats ${convertToWord(computerChoice)}${smallCompWord}. You win!`;
-    userChoice_div.classList.add('green-glow');
-    setTimeout(() => userChoice_div.classList.remove('green-glow'), 500);
+    
 }
 // function for losing
 let lose = (userChoice, computerChoice) => {
@@ -44,8 +43,7 @@ let lose = (userChoice, computerChoice) => {
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
     result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} loses to ${convertToWord(computerChoice)}${smallCompWord}. You lost!`;
-    userChoice_div.classList.add('red-glow');
-    setTimeout(() => userChoice_div.classList.remove('red-glow'), 500);
+    
 }    
 // function for draw
 let draw = (userChoice, computerChoice) => {
@@ -53,8 +51,7 @@ let draw = (userChoice, computerChoice) => {
     const smallCompWord = "comp".fontsize(3).sup();
     const userChoice_div = document.getElementById(userChoice);
     result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} equals ${convertToWord(computerChoice)}${smallCompWord}. It's a draw!`;
-    userChoice_div.classList.add('grey-glow');
-    setTimeout(() => userChoice_div.classList.remove('grey-glow'), 500);
+    
 }    
 // switch statement instead on conditional statement
 let game = (userChoice) => {
