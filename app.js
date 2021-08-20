@@ -53,7 +53,8 @@ let draw = (userChoice, computerChoice) => {
     result.innerHTML = `${convertToWord(userChoice)}${smallUserWord} equals ${convertToWord(computerChoice)}${smallCompWord}. It's a draw!`;
     
 }    
-// switch statement instead on conditional statement
+// switch statement instead on conditional statement https://www.youtube.com/watch?v=fM5qnyasUYI
+// https://stackoverflow.com/questions/55186956/javascript-rock-paper-scissors-with-switch-statement-if-not-what-are-altern
 let game = (userChoice) => {
     const computerChoice = getComputerChoice();
     switch (userChoice + computerChoice) {
