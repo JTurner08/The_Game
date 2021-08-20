@@ -4,11 +4,11 @@ let getComputerChoice = ()=> {
     const randomNumber = Math.floor(Math.random() * 3);
     return choices[randomNumber];
 }
-// dom
+// dom manipulation
 const userScore_span = document.getElementById("user-score");
 const computerScore_span = document.getElementById("computer-score");
 const scoreBoard_div = document.querySelector(".score-board");
-const result_p = document.querySelector(".result > p");
+const result = document.querySelector(".result > p");
 const rock = document.getElementById("r");
 const paper = document.getElementById("p");
 const scissors = document.getElementById("s");
@@ -31,7 +31,7 @@ let win = (userChoice, computerChoice) => {
     userScore++;
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
-    result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} beats ${convertToWord(computerChoice)}${smallCompWord}. You win!`;
+    result.innerHTML = `${convertToWord(userChoice)}${smallUserWord} beats ${convertToWord(computerChoice)}${smallCompWord}. You win!`;
     
 }
 // function for losing
@@ -42,7 +42,7 @@ let lose = (userChoice, computerChoice) => {
     computerScore++;
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
-    result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} loses to ${convertToWord(computerChoice)}${smallCompWord}. You lost!`;
+    result.innerHTML = `${convertToWord(userChoice)}${smallUserWord} loses to ${convertToWord(computerChoice)}${smallCompWord}. You lost!`;
     
 }    
 // function for draw
@@ -50,7 +50,7 @@ let draw = (userChoice, computerChoice) => {
     const smallUserWord = "user".fontsize(3).sup();
     const smallCompWord = "comp".fontsize(3).sup();
     const userChoice_div = document.getElementById(userChoice);
-    result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} equals ${convertToWord(computerChoice)}${smallCompWord}. It's a draw!`;
+    result.innerHTML = `${convertToWord(userChoice)}${smallUserWord} equals ${convertToWord(computerChoice)}${smallCompWord}. It's a draw!`;
     
 }    
 // switch statement instead on conditional statement
