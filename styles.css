@@ -11,6 +11,7 @@ body {
 header {  
     font-size: 25px;
     padding: 50px;
+    
 }
 
 header h1 {
@@ -78,8 +79,7 @@ header h1 {
 
 #action-message {
     text-align: center;
-    color: #fff;
-    font-family: sans-serif;
+    color: white;
     font-weight: bold;
     font-size: 20px;
     margin-top: 20px;
