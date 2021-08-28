@@ -75,6 +75,7 @@ header h1 {
 
 .choice:hover {
     cursor: pointer;
+    background-color: cornsilk;
 }
 
 #action-message {
